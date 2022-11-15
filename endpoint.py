@@ -11,6 +11,7 @@ async def index() -> dict:
 
 @app.post('/sensor/', response_model=dict)
 async def post_sensor_data(payload: dict) -> dict:
+    print(payload)
     return payload
 
 
